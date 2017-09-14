@@ -24,7 +24,6 @@ class TcaColPosItems implements FormDataProviderInterface
     {
         if ('tt_content' !== $result['tableName']
             || empty($result['processedTca']['columns']['colPos']['config']['items'])
-            || !empty($result['isInlineChild'])
         ) {
             return $result;
         }
